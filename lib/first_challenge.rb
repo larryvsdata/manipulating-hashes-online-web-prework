@@ -14,7 +14,7 @@ def first_challenge
   }
 
   #your code here
-  fir
+  
   contacts.each do
     |person, data|
     if person == "Freddy Mercury"
