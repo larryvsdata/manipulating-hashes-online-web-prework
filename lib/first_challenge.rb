@@ -22,7 +22,7 @@ def first_challenge
     |tag, elements|
     if tag == :favorite_ice_cream_flavors
       puts tag
-      contacts[person] [tag]= contacts[person] [tag].delete_if { |x| x == "strawberry" }
+       contacts[person] [tag].delete_if { |x| x == "strawberry" }
     end
     end 
   end
