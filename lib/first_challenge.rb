@@ -17,7 +17,7 @@ def first_challenge
   
   contacts.each do |person, contact_details_hash|
     contact_details_hash.each do |attribute, data|
-      data.clear
+      data = []
     end
   end
 
