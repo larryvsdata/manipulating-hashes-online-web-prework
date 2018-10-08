@@ -21,7 +21,7 @@ def first_challenge
       data.each do
     |tag, elements|
     if tag == "favorite_icecream_flavors"
-      contacts[person] [tag]= elements.delete_if { |x| x =="strawberry" }
+      contacts[person] [tag]= elements.delete_if { |x| x== "strawberry" }
     end
     end 
   end
