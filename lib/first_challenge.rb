@@ -21,7 +21,7 @@ def first_challenge
       data.each do
     |tag, elements|
     if tag == "favorite_icecream_flavors"
-      contacts[person] [tag]= contacts[person] [tag].shift
+      contacts[person] [tag]= contacts[person] [tag].clear
     end
     end 
   end
