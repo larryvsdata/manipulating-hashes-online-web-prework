@@ -20,8 +20,9 @@ def first_challenge
     if person == "Freddy Mercury"
       data.each do
     |tag, elements|
-    
+    if tag == "favorite_icecream_flavors"
       elements = elements.delete_if { |x| x =="strawberry" }
+    end
     end 
   end
   end
