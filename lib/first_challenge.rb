@@ -17,11 +17,13 @@ def first_challenge
   
   contacts.each do
     |person, data|
-    
     if person == "Freddy Mercury"
-      data = data.delete_if { |x| x =="strawberry" }
-    end 
+      data.each do
+    |tag, elements|
     
+      elements = elements.delete_if { |x| x =="strawberry" }
+    end 
+  end
   end
 
 
