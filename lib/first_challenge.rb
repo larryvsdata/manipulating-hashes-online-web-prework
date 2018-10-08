@@ -15,17 +15,13 @@ def first_challenge
 
   #your code here
   
-  contacts.each do
-    |person, data|
-    if person == :"Freddy Mercury"
-    |tag, elements|
-    if tag == :favorite_ice_cream_flavors
-      puts tag
-       contacts[person] [tag].delete_if { |x| x == "strawberry" }
+contacts.each do |person, contact_details_hash|
+  contact_details_hash.each do |attribute, data|
+    if attribute == :favorite_ice_cream_flavors
+      data.delete_if {|ice_cream| ice_cream == "strawberry"}
     end
-    end 
   end
-  end
+end
 
 
   #remember to return your newly altered contacts hash!
