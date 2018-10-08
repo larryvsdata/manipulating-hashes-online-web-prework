@@ -16,7 +16,7 @@ def first_challenge
   #your code here
   
   contacts.each do |person, contact_details_hash|
-    contact_details_hash.each do |attribute, data|
+    contact_details_hash.map do |attribute, data|
       data = []
     end
   end
