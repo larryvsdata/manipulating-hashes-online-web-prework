@@ -17,8 +17,7 @@ def first_challenge
   
   contacts.each do
     |person, data|
-    if person == "Freddy Mercury"
-      data.each do
+    if person == :"Freddy Mercury"
     |tag, elements|
     if tag == :favorite_ice_cream_flavors
       puts tag
