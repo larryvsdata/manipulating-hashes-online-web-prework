@@ -19,7 +19,7 @@ def first_challenge
     |person, data|
     
     if person == "Freddy Mercury"
-      data = data.delete_if
+      data = data.delete_if { |x| x =="strawberry" }
     end 
     
   end
